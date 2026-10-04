@@ -3,7 +3,7 @@
   "name": "Drone Flight Log",
   "version": "1.0.0",
   "minAppVersion": "0.15.0",
-  "description": "Log drone flights, equipment telemetry, battery cycles, crew weather, and view flight analytics in Obsidian.",
+  "description": "Log drone flights, equipment telemetry, battery cycles, crew weather, and view flight analytics.",
   "author": "Michael Wallick",
   "authorUrl": "https://github.com/michaelatdisney",
   "isDesktopOnly": false
