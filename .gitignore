@@ -1,0 +1,8 @@
+# Only Include the necessary files for an obsidian plugin
+*
+!.gitignore
+!main.js
+!manifest.json
+!styles.css
+!LICENSE
+!README.md

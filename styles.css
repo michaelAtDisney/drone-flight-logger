@@ -1,0 +1,375 @@
+/* Drone Flight Log Plugin Styles */
+
+/* Modal Container */
+.drone-flight-modal {
+  max-width: 680px;
+  width: 90vw;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+.drone-modal-header {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding-bottom: 0.75rem;
+}
+
+.drone-modal-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--text-normal);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.drone-modal-subtitle {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+}
+
+/* Tabs */
+.drone-modal-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding-bottom: 0.5rem;
+  overflow-x: auto;
+}
+
+.drone-tab-button {
+  background: transparent;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  border-radius: var(--radius-s, 4px);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.drone-tab-button:hover {
+  background: var(--background-modifier-hover);
+  color: var(--text-normal);
+}
+
+.drone-tab-button.active {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  font-weight: 500;
+}
+
+/* Tab Content */
+.drone-tab-pane {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.drone-tab-pane.active {
+  display: flex;
+}
+
+/* Form Controls & Layout */
+.drone-form-row {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+.drone-form-row > * {
+  flex: 1;
+}
+
+.drone-form-row-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.drone-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.drone-field-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.drone-field-hint {
+  font-size: 0.78rem;
+  color: var(--text-faint);
+  margin-top: -0.15rem;
+}
+
+.drone-input,
+.drone-select,
+.drone-textarea {
+  background-color: var(--background-modifier-form-field);
+  border: 1px solid var(--background-modifier-border);
+  color: var(--text-normal);
+  padding: 0.45rem 0.65rem;
+  border-radius: var(--radius-s, 4px);
+  font-size: 0.9rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.drone-input:focus,
+.drone-select:focus,
+.drone-textarea:focus {
+  border-color: var(--interactive-accent);
+  outline: none;
+}
+
+.drone-textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+/* Duration Banner */
+.drone-duration-card {
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  border-left: 4px solid var(--interactive-accent);
+  border-radius: var(--radius-s, 4px);
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.drone-duration-val {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-normal);
+  margin-top: 0.2rem;
+}
+
+/* Modal Footer */
+.drone-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--background-modifier-border);
+  align-items: center;
+}
+
+.drone-btn {
+  padding: 0.45rem 1rem;
+  border-radius: var(--radius-s, 4px);
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.15s ease;
+}
+
+.drone-btn-primary {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+}
+
+.drone-btn-primary:hover {
+  background: var(--interactive-accent-hover);
+}
+
+.drone-btn-secondary {
+  background: var(--background-modifier-form-field);
+  color: var(--text-normal);
+  border-color: var(--background-modifier-border);
+}
+
+.drone-btn-secondary:hover {
+  background: var(--background-modifier-hover);
+}
+
+.drone-resize-handle {
+  margin-left: auto;
+  color: var(--text-faint);
+  font-size: 0.75rem;
+  cursor: nwse-resize;
+  user-select: none;
+}
+
+/* Dashboard View */
+.drone-dashboard-container {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.drone-dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding-bottom: 1rem;
+}
+
+.drone-dashboard-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-normal);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.drone-btn-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Metric Cards */
+.drone-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.drone-metric-card {
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m, 8px);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  position: relative;
+}
+
+.drone-metric-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.drone-metric-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.drone-metric-value {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-normal);
+}
+
+.drone-metric-subtext {
+  font-size: 0.75rem;
+  color: var(--text-faint);
+}
+
+/* Dashboard Split */
+.drone-dashboard-split {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.25rem;
+}
+
+@media (max-width: 800px) {
+  .drone-dashboard-split {
+    grid-template-columns: 1fr;
+  }
+}
+
+.drone-section-card {
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m, 8px);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.drone-section-header {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-normal);
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding-bottom: 0.5rem;
+}
+
+/* Recent Flights Table */
+.drone-flight-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.drone-flight-table th {
+  text-align: left;
+  padding: 0.5rem;
+  border-bottom: 2px solid var(--background-modifier-border);
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.drone-flight-table td {
+  padding: 0.55rem 0.5rem;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.drone-flight-table tr:hover td {
+  background-color: var(--background-modifier-hover);
+}
+
+.drone-tag {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background-color: var(--background-modifier-form-field);
+  color: var(--text-muted);
+}
+
+.drone-tag-commercial {
+  background-color: rgba(59, 130, 246, 0.15);
+  color: var(--text-accent);
+}
+
+.drone-tag-mapping {
+  background-color: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+}
+
+.drone-tag-inspection {
+  background-color: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+}
+
+/* Battery & Aircraft List */
+.drone-battery-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.65rem;
+  background: var(--background-primary);
+  border-radius: var(--radius-s, 4px);
+  border: 1px solid var(--background-modifier-border);
+  font-size: 0.85rem;
+}
+
+.drone-battery-id {
+  font-weight: 600;
+  color: var(--text-normal);
+}
+
+.drone-battery-cycles {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
